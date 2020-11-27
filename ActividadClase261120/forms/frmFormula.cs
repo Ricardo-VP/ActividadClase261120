@@ -10,17 +10,23 @@ using System.Windows.Forms;
 
 namespace ActividadClase261120.forms
 {
-    public partial class frmActividadFactoriales : Form
+    public partial class frmFormula : Form
     {
-        public frmActividadFactoriales()
+        public frmFormula()
         {
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            int numero = Convert.ToInt32(txtNum.Text);
-            textBox1.Text = Convert.ToString(clases.Factorial.ejFact(numero));
+            int i = Convert.ToInt32(txtI.Text);
+            int n = Convert.ToInt32(txtN.Text);
+            txtRes.Text = Convert.ToString(clases.Formula.ejFormula(i, n));
         }
     }
 }
