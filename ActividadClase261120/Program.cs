@@ -16,7 +16,7 @@ namespace ActividadClase261120
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new forms.frmFormula());
+            Application.Run(new forms.frmMenu());
         }
     }
 }
